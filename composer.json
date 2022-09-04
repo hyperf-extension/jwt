@@ -1,0 +1,71 @@
+{
+    "name": "hyperf-extension/jwt",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "auth",
+        "jwt"
+    ],
+    "description": "The Hyperf JWT package.",
+    "authors": [
+		{
+            "name": "angeltxwh",
+            "email": "admin@ilover.me"
+        },
+        {
+            "name": "Eric Zhu",
+            "email": "eric@zhu.email"
+        },
+        {
+            "name": "Sean Tymon",
+            "email": "tymon148@gmail.com",
+            "homepage": "https://tymon.xyz",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HyperfExtension\\Jwt\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-swoole": ">=4.5",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "hyperf/cache": "^3.0.0",
+        "hyperf/command": "^3.0.0",
+        "hyperf/config": "^3.0.0",
+        "hyperf/di": "^3.0.0",
+        "hyperf/framework": "^3.0.0",
+        "lcobucci/jwt": "~4.1.0",
+        "nesbot/carbon": "^2.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "hyperf/testing": "^3.0.0",
+        "phpstan/phpstan": "^0.12",
+        "swoole/ide-helper": "dev-master",
+        "mockery/mockery": "^1.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "co-phpunit --prepend tests/bootstrap.php -c phpunit.xml --colors=always",
+        "analyse": "phpstan analyse --memory-limit 1024M -l 0 ./src",
+        "cs-fix": "php-cs-fixer fix $1"
+    },
+    "extra": {
+        "hyperf": {
+            "config": "HyperfExtension\\Jwt\\ConfigProvider"
+        }
+    }
+}
