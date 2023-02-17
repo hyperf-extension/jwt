@@ -208,7 +208,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
      *
      * @return mixed
      */
-    public function offsetGet($key)
+    public function offsetGet($key): mixed
     {
         return Arr::get($this->toArray(), $key);
     }
@@ -221,7 +221,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
      *
      * @throws \HyperfExtension\Jwt\Exceptions\PayloadException
      */
-    public function offsetSet($key, $value)
+    public function offsetSet($key, $value): void
     {
         throw new PayloadException('The payload is immutable');
     }
@@ -233,7 +233,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
      *
      * @throws \HyperfExtension\Jwt\Exceptions\PayloadException
      */
-    public function offsetUnset($key)
+    public function offsetUnset($key): void
     {
         throw new PayloadException('The payload is immutable');
     }
