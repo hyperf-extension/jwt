@@ -1,5 +1,5 @@
 {
-    "name": "hyperf-extension/jwt",
+    "name": "vfowo/jwt",
     "type": "library",
     "license": "MIT",
     "keywords": [
