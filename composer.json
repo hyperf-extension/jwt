@@ -1,5 +1,5 @@
 {
-    "name": "hyperf-extension/jwt",
+    "name": "vfowo/jwt",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -37,7 +37,6 @@
     },
     "require": {
         "php": ">=8.0",
-        "ext-swoole": ">=4.5",
         "ext-json": "*",
         "ext-openssl": "*",
         "hyperf/cache": "^3.0.0",
