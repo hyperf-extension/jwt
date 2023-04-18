@@ -1,5 +1,5 @@
 {
-    "name": "vfowo/jwt",
+    "name": "hyperf-extension/jwt",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -23,6 +23,10 @@
             "email": "tymon148@gmail.com",
             "homepage": "https://tymon.xyz",
             "role": "Developer"
+        },
+        {
+            "name": "Gently",
+            "email": "xiangjihan@gmail.com"
         }
     ],
     "autoload": {
