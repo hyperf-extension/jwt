@@ -10,7 +10,7 @@
     ],
     "description": "The Hyperf JWT package.",
     "authors": [
-		{
+        {
             "name": "angeltxwh",
             "email": "admin@ilover.me"
         },
@@ -23,6 +23,10 @@
             "email": "tymon148@gmail.com",
             "homepage": "https://tymon.xyz",
             "role": "Developer"
+        },
+        {
+            "name": "Gently",
+            "email": "xiangjihan@gmail.com"
         }
     ],
     "autoload": {
