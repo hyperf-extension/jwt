@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 namespace HyperfExtension\Jwt;
 
-use Hyperf\Utils\ApplicationContext;
+use Hyperf\Context\ApplicationContext;
 use HyperfExtension\Jwt\Contracts\TokenValidatorInterface;
 
 class Token

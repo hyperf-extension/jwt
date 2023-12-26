@@ -10,9 +10,9 @@ declare(strict_types=1);
  */
 namespace HyperfExtension\Jwt\Claims;
 
-use Hyperf\Utils\ApplicationContext;
-use Hyperf\Utils\Contracts\Arrayable;
-use Hyperf\Utils\Contracts\Jsonable;
+use Hyperf\Context\ApplicationContext;
+use Hyperf\Contract\Arrayable;
+use Hyperf\Contract\Jsonable;
 use HyperfExtension\Jwt\Contracts\ClaimInterface;
 use HyperfExtension\Jwt\Contracts\ManagerInterface;
 use JsonSerializable;

@@ -13,6 +13,8 @@ namespace HyperfExtension\Jwt;
 use Hyperf\Contract\ConfigInterface;
 use HyperfExtension\Jwt\Contracts\JwtFactoryInterface;
 
+use function Hyperf\Support\make;
+
 class JwtFactory implements JwtFactoryInterface
 {
     protected $lockSubject = true;
