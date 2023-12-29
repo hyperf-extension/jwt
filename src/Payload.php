@@ -13,15 +13,17 @@ namespace HyperfExtension\Jwt;
 use ArrayAccess;
 use BadMethodCallException;
 use Countable;
-use Hyperf\Utils\ApplicationContext;
-use Hyperf\Utils\Arr;
-use Hyperf\Utils\Contracts\Arrayable;
-use Hyperf\Utils\Contracts\Jsonable;
+use Hyperf\Context\ApplicationContext;
+use Hyperf\Collection\Arr;
+use Hyperf\Contract\Arrayable;
+use Hyperf\Contract\Jsonable;
 use HyperfExtension\Jwt\Claims\AbstractClaim;
 use HyperfExtension\Jwt\Claims\Collection;
 use HyperfExtension\Jwt\Contracts\PayloadValidatorInterface;
 use HyperfExtension\Jwt\Exceptions\PayloadException;
 use JsonSerializable;
+
+use function Hyperf\Support\value;
 
 class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerializable
 {

@@ -17,6 +17,8 @@ use HyperfExtension\Jwt\Exceptions\InvalidConfigException;
 use HyperfExtension\Jwt\Storage\HyperfCache;
 use Psr\Container\ContainerInterface;
 
+use function Hyperf\Support\make;
+
 class ManagerFactory
 {
     /**

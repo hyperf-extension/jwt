@@ -12,6 +12,8 @@ namespace HyperfExtension\Jwt;
 
 use HyperfExtension\Jwt\Contracts\StorageInterface;
 
+use function Hyperf\Support\value;
+
 class Blacklist
 {
     /**

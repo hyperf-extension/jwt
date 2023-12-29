@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 namespace HyperfExtension\Jwt;
 
-use Hyperf\Utils\Arr;
+use Hyperf\Collection\Arr;
 use HyperfExtension\Jwt\Claims\Factory as ClaimFactory;
 use HyperfExtension\Jwt\Contracts\CodecInterface;
 use HyperfExtension\Jwt\Contracts\ManagerInterface;

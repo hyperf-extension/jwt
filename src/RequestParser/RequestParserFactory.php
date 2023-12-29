@@ -16,6 +16,8 @@ use HyperfExtension\Jwt\RequestParser\Handlers\InputSource;
 use HyperfExtension\Jwt\RequestParser\Handlers\QueryString;
 use HyperfExtension\Jwt\RequestParser\Handlers\RouteParams;
 
+use function Hyperf\Support\make;
+
 class RequestParserFactory
 {
     public function __invoke()

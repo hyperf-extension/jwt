@@ -10,10 +10,12 @@ declare(strict_types=1);
  */
 namespace HyperfExtension\Jwt\Claims;
 
-use Hyperf\Utils\ApplicationContext;
-use Hyperf\Utils\Str;
+use Hyperf\Context\ApplicationContext;
+use Hyperf\Stringable\Str;
 use HyperfExtension\Jwt\Contracts\ClaimInterface;
 use Psr\Http\Message\ServerRequestInterface;
+
+use function Hyperf\Support\make;
 
 class Factory
 {

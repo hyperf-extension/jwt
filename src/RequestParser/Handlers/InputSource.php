@@ -13,6 +13,8 @@ namespace HyperfExtension\Jwt\RequestParser\Handlers;
 use HyperfExtension\Jwt\Contracts\RequestParser\HandlerInterface as ParserContract;
 use Psr\Http\Message\ServerRequestInterface;
 
+use function Hyperf\Collection\data_get;
+
 class InputSource implements ParserContract
 {
     use KeyTrait;

@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 namespace HyperfExtension\Jwt\Claims;
 
-use Hyperf\Utils\Collection as HyperfCollection;
+use Hyperf\Collection\Collection as HyperfCollection;
 
 class Collection extends HyperfCollection
 {

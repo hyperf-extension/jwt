@@ -11,8 +11,8 @@ declare(strict_types=1);
 namespace HyperfExtension\Jwt;
 
 use Exception;
-use Hyperf\Utils\Arr;
-use Hyperf\Utils\Collection;
+use Hyperf\Collection\Arr;
+use Hyperf\Collection\Collection;
 use HyperfExtension\Jwt\Contracts\CodecInterface;
 use HyperfExtension\Jwt\Exceptions\JwtException;
 use HyperfExtension\Jwt\Exceptions\TokenInvalidException;
